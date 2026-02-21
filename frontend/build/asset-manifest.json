@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/securechat-project/static/css/main.21ac3f0b.css",
+    "main.js": "/securechat-project/static/js/main.c7124bbb.js",
+    "index.html": "/securechat-project/index.html",
+    "main.21ac3f0b.css.map": "/securechat-project/static/css/main.21ac3f0b.css.map",
+    "main.c7124bbb.js.map": "/securechat-project/static/js/main.c7124bbb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21ac3f0b.css",
+    "static/js/main.c7124bbb.js"
+  ]
+}
