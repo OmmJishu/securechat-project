@@ -298,9 +298,36 @@ function App() {
                   />
                 </div>
                 
-                <button onClick={handleLogin} className="btn-primary">
-                  Login
-                </button>
+                <form onSubmit={handleLogin} className="login-form">
+                    {error && <div className="error-message">{error}</div>}
+                  
+                    <div className="form-group">
+                      <label>Username</label>
+                      <input
+                        type="text"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        placeholder="Enter your username"
+                        autoComplete="username"
+                      />
+                    </div>
+                  
+                    <div className="form-group">
+                      <label>Password</label>
+                      <input
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Enter your password"
+                        autoComplete="current-password"
+                      />
+                    </div>
+                  
+                    <button type="submit" className="btn-primary">
+                      Login
+                    </button>
+                </form>
+
               </div>
 
               <div className="switch-view">
@@ -338,9 +365,36 @@ function App() {
                   />
                 </div>
                 
-                <button onClick={handleRegister} className="btn-primary">
-                  Register
-                </button>
+                <form onSubmit={handleRegister} className="login-form">
+                    {error && <div className="error-message">{error}</div>}
+                  
+                    <div className="form-group">
+                      <label>Username</label>
+                      <input
+                        type="text"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        placeholder="Choose a username (min 3 characters)"
+                        autoComplete="username"
+                      />
+                    </div>
+                  
+                    <div className="form-group">
+                      <label>Password</label>
+                      <input
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Choose a password (min 6 characters)"
+                        autoComplete="new-password"
+                      />
+                    </div>
+                  
+                    <button type="submit" className="btn-primary">
+                      Register
+                    </button>
+                </form>
+
               </div>
 
               <div className="switch-view">
