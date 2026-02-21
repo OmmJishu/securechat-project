@@ -14,7 +14,8 @@ function App() {
   const [messages, setMessages] = useState({});
   const [roomUsers, setRoomUsers] = useState([]);
   const [isConnected, setIsConnected] = useState(false);
-  const [serverUrl] = useState('http://localhost:3001');
+  // const [serverUrl] = useState('http://localhost:3001');
+  const [serverUrl] = useState('https://securechat-project.onrender.com')
   const wsRef = useRef(null);
   const messagesEndRef = useRef(null);
 
